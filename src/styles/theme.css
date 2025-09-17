@@ -1,0 +1,62 @@
+:root {
+  /* Default theme colors - these will be overridden by JavaScript */
+  --color-primary: #22c55e;    /* green-500 */
+  --color-secondary: #1f2937;  /* gray-800 */
+  --color-accent: #ef4444;     /* red-500 */
+  --color-background: #ffffff; /* white */
+  --color-text: #374151;       /* gray-700 */
+}
+
+/* Theme color utility classes */
+.bg-primary {
+  background-color: var(--color-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary) !important;
+}
+
+.bg-accent {
+  background-color: var(--color-accent) !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
+
+.text-accent {
+  color: var(--color-accent) !important;
+}
+
+.border-primary {
+  border-color: var(--color-primary) !important;
+}
+
+.border-secondary {
+  border-color: var(--color-secondary) !important;
+}
+
+.border-accent {
+  border-color: var(--color-accent) !important;
+}
+
+/* Hover states */
+.hover\:bg-primary:hover {
+  background-color: var(--color-primary) !important;
+}
+
+.hover\:bg-secondary:hover {
+  background-color: var(--color-secondary) !important;
+}
+
+.hover\:text-primary:hover {
+  color: var(--color-primary) !important;
+}
+
+.hover\:text-secondary:hover {
+  color: var(--color-secondary) !important;
+}

@@ -1,4 +1,6 @@
+// import { firaCode } from "@/app/ui/fonts"; // Removed invalid import
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -50,8 +52,16 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        <div className="mt-6 mb-4">
+          <Link href="/agriculture" className="bg-black hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center">
+            View Agriculture Job Portal
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
+        </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      <footer className="flex flex-col justify-center items-center text-center w-full text-xs gap-2 md:gap-4 text-neutral-600/60 dark:text-neutral-500 hl-none row-start-3">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
