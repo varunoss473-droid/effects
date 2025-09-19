@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useRef, useMemo } from "react";
+import React, { useState, useRef, useMemo, useEffect } from "react";
 import { Dropdown } from "antd";
 
 const MegaMenu = ({
@@ -9,8 +9,7 @@ const MegaMenu = ({
 }) => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [activeChildIndexes, setActiveChildIndexes] = useState([]);
-  const [activeExtraContent, setActiveExtraContent] = useState(null);
-
+  const [activeExtraContent, setActiveExtraContent] = useState(null)
   const menuRef = useRef();
 
   const hasChildrens = (item) =>
@@ -240,10 +239,10 @@ const MegaMenu = ({
                       label: (
                         <a
                           className={
-                            window.location.pathname ===
+                            typeof window !== "undefined" && (window.location.pathname ===
                             new URL(child.url, window.location.origin).pathname
                               ? "selected"
-                              : ""
+                              : "")
                           }
                           href={child.url}
                         >
